@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/styles.css">
-    <link rel="stylesheet" href="/frontend/css/conceitos.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/conceitos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Portal mediotec</title>
 </head>
 
@@ -21,27 +22,26 @@
         </div>
         <hr>
         <div id="options">
-            <div id="home">
-                <img src="/frontend/icons/Home.svg" alt="icon-home">
-                <a href="/frontend/professor/home.html">Home</a>
+            <div id="inicio">
+                <img src="../icons/home.svg" alt="icon-home">
+                <a href="../professor/home.html">Início</a>
             </div>
             <div id="comunicados">
-                <img src="/frontend/icons/Comunicados.svg" alt="icon-comunicados">
-                <a href="/frontend/professor/comunicados.html">Comunicados</a>
+                <img src="../icons/forum.svg" alt="icon-comunicados">
+                <a href="../professor/comunicados.html">Comunicados</a>
             </div>
             <div id="conceitos">
-                <img src="/frontend/icons/Conceitos.svg" alt="icon-conceitos">
-                <a href="#">Conceitos</a>
+                <img src="../icons/conceitos.svg" alt="icon-conceitos">
+                <a href="#" id="a-conceito">Conceitos</a>
             </div>
-        </div>
-        <hr>
-        <a href="/frontend/index.html">Sair</a>
+            <hr>
+            <a href="/frontend/index.html">Sair</a>
     </nav>
     <div id="geral">
         <header>
-            <img src="/frontend/img/logo.png" alt="logo-senac" id="logo-senac">
+            <img src="../img/logo.png" alt="logo-senac" id="logo-senac">
             <div id="pastas">
-                <a href="/frontend/professor/home.html" class="pasta-anterior">Home</a>
+                <a href="../professor/home.html" class="pasta-anterior">Home</a>
                 <p>></p>
                 <p id="pasta-atual">Conceitos</p>
             </div>
@@ -51,53 +51,56 @@
                 <h1>Conceitos</h1>
             </div>
             <main>
-                <div id="conteudo">
-                    <div id="avs">
-                        <p>Nome do aluno</p>
-                        <p>AV1</p>
-                        <p>AV2</p>
-                        <p>MU</p>
-                        <p>MUPN</p>
-                        <p>F</p>
-                    </div>
-                    <div id="alunos-list">
-                        <h1>Lista indisponível :(</h1>
-                        <!-- <ul>
-                            <li id="aluno">
-                                <p>Maria</p>
-                                <select name="select-av1" id="select-av1">
-                                    <option value="conceito" disabled selected>Selecionar</option>
-                                    <option value="a">A</option>
-                                    <option value="pa">PA</option>
-                                    <option value="na">NA</option>
-                                </select>
-                                <select name="select-av2" id="select-av2">
-                                    <option value="conceito" disabled selected>Selecionar</option>
-                                    <option value="a">A</option>
-                                    <option value="pa">PA</option>
-                                    <option value="na">NA</option>
-                                </select>
-                                <select name="select-mu" id="select-mu">
-                                    <option value="conceito" disabled selected>Selecionar</option>
-                                    <option value="a">A</option>
-                                    <option value="pa">PA</option>
-                                    <option value="na">NA</option>
-                                </select>
-                                <select name="select-mupn" id="select-mupn">
-                                    <option value="conceito" disabled selected>Selecionar</option>
-                                    <option value="a">A</option>
-                                    <option value="pa">PA</option>
-                                    <option value="na">NA</option>
-                                </select>
-                                <select name="select-f" id="select-f">
-                                    <option value="conceito" disabled selected>Selecionar</option>
-                                    <option value="a">A</option>
-                                    <option value="pa">PA</option>
-                                    <option value="na">NA</option>
-                                </select>
-                            </li>
-                        </ul> -->
-                    </div>
+                <div id="avs">
+                    <p>Nome do aluno</p>
+                    <div class="barrinha"></div>
+                    <p>AV1</p>
+                    <div class="barrinha"></div>
+                    <p>AV2</p>
+                    <div class="barrinha"></div>
+                    <p>MU</p>
+                    <div class="barrinha"></div>
+                    <p>MUPN</p>
+                    <div class="barrinha"></div>
+                    <p>F</p>
+                </div>
+                <div id="alunos-list">
+                    <!-- <h1>Lista indisponível :(</h1> -->
+                    <ul>
+                        <li id="aluno">
+                            <p>Maria lsdam ladalskdmasd de masldkasd</p>
+                            <select name="select-av1" id="select-av1">
+                                <option value="conceito" disabled selected>Selecionar</option>
+                                <option value="a">A</option>
+                                <option value="pa">PA</option>
+                                <option value="na">NA</option>
+                            </select>
+                            <select name="select-av2" id="select-av2">
+                                <option value="conceito" disabled selected>Selecionar</option>
+                                <option value="a">A</option>
+                                <option value="pa">PA</option>
+                                <option value="na">NA</option>
+                            </select>
+                            <select name="select-mu" id="select-mu">
+                                <option value="conceito" disabled selected>Selecionar</option>
+                                <option value="a">A</option>
+                                <option value="pa">PA</option>
+                                <option value="na">NA</option>
+                            </select>
+                            <select name="select-mupn" id="select-mupn">
+                                <option value="conceito" disabled selected>Selecionar</option>
+                                <option value="a">A</option>
+                                <option value="pa">PA</option>
+                                <option value="na">NA</option>
+                            </select>
+                            <select name="select-f" id="select-f">
+                                <option value="conceito" disabled selected>Selecionar</option>
+                                <option value="a">A</option>
+                                <option value="pa">PA</option>
+                                <option value="na">NA</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
                 <div id="enviar-voltar">
                     <a href="/frontend/professor/home.html"><button type="button">Voltar</button></a>
@@ -106,6 +109,8 @@
             </main>
         </div>
     </div>
+
+    <script src="../app.js"></script>
 </body>
 
 </html>

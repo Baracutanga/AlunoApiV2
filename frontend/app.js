@@ -9,3 +9,23 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+// Menu
+const mouseEnter = (option) => {
+    option.addEventListener('mouseenter', () => {
+        option.style.opacity = '100'
+    })
+
+    option.addEventListener('mouseleave', () => {
+        option.style.opacity = ''
+    })
+}
+
+mouseEnter(document.getElementById('inicio'));
+mouseEnter(document.getElementById('comunicados'));
+mouseEnter(document.getElementById('conceitos'));
+mouseEnter(document.getElementById('alunos'));
+mouseEnter(document.getElementById('professor'));
+mouseEnter(document.getElementById('coordenador'));
+mouseEnter(document.getElementById('turmas'));
+mouseEnter(document.getElementById('disciplinas'));

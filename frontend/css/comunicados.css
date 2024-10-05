@@ -1,39 +1,136 @@
-#titulo-add {
+#container-main {
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 10%;
+}
+
+main {
+    width: 100%;
+    /* height: 20%; */
+
+}
+
+#header-titulo {
     display: flex;
     padding: 10px;
-    padding-bottom: 2px;
-    margin: 10px 0px;
-    z-index: 2;
-    margin-bottom: 0px;
-}
-
-#titulo {
-    width: 880px;
-}
-
-#titulo-add button {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 170px;
-    font-size: 16px;
-    text-align: center;
-    background-color: #21618C;
-    border: 1px solid #152d52;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #fff;
+    z-index: 2;
+    width: 98%;
+    height: 50px;
+    color: #2E4EAD;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: 15%;
+        font-size: 16px;
+        text-align: center;
+        background-color: #21618C;
+        border: 1px solid rgba(21, 45, 82, .3);
+        border-radius: 4px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.6);;
+
+        & img {
+            margin-right: 5%;
+            filter: invert(1);
+            opacity: .6;
+        }
+    }
+
+    & img {
+        width: 11%;
+        margin: 0px;
+        margin-right: 5px;
+    }
+
+    & #titulo {
+        width: 40%;
+    }
+
+    & select {
+        font-family: 'Albert Sans';
+    }
+
+    & #turma-select,
+    #disciplina-select {
+        width: 20%;
+        height: 60%;
+        margin: 0px 5px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 2px;
+    }
 }
 
-#titulo-add img {
-    width: 11%;
-    margin: 0px;
-    margin-right: 5px;
+#geral {
+    height: 100%;
 }
 
-#titulo-edit h3{
-    font-weight: 600;
+.comunicado {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15px 10px;
+    z-index: 1;
+
+    & p {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+#comunicado-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+    z-index: 1;
+    width: 100%;
+    height: 455px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header-comunicado {
+    display: flex;
+    align-items: center;
+    background-color: #2E4EAD;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    & img {
+        width: 5%;
+    }
+
+    & .titulo-edit {
+        display: flex;
+        align-items: center;
+        margin: 10px 15px;
+        width: 86%;
+        filter: invert(1);     
+
+        & h3 {
+            font-weight: 500;
+            font-size: 22px;
+            margin: 0px;
+        }
+
+        & img {
+            width: 5%;
+            margin-left: 2%;
+        }
+    }
 }
 
 #btn-edit {
@@ -42,10 +139,10 @@
     align-items: center;
     width: 30px;
     height: 30px;
-}
 
-#btn-edit img {
-    width: 110%;
+    & img {
+        width: 110%;
+    }
 }
 
 form {
@@ -53,14 +150,27 @@ form {
     position: absolute;
     left: 45%;
     top: 25%;
+    z-index: 4;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: #EDEDED;
     width: fit-content;
     padding: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+
+    & h3 {
+        color: #000;
+        margin: 5px 0px;
+        opacity: 80%;
+    }
+
+    & h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
 textarea {
@@ -72,17 +182,6 @@ textarea {
     border-radius: 5px;
     outline: none;
     font-family: Helvetica;
-}
-
-form h3 {
-    color: #000;
-    margin: 5px 0px;
-    opacity: 80%;
-}
-
-form h1 {
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 #add-titulo {
@@ -103,13 +202,41 @@ form h1 {
     justify-content: end;
     width: 310px;
     padding: 5px;
+
+    & button {
+        width: 80px;
+        height: 30px;
+        background-color: #21618C;
+        border: 1px solid #152d52;
+        cursor: pointer;
+        border-radius: 3px;
+    }
 }
 
-#btn-enviar button {
-    width: 80px;
-    height: 30px;
-    background-color: #21618C;
-    border: 1px solid #152d52;
-    cursor: pointer;
-    border-radius: 3px;
+.btn-lermais {
+    width: 30%;
+
+    & a button {
+        padding: 10px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, .2);
+        margin: 10px;
+        font-family: 'Albert Sans';
+        background-color: #21618C;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+#inicio {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 20;
+}
+
+#comunicados {
+    background-color: #92A6E2;
+    opacity: 100;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }

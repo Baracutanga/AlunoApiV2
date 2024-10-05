@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/frontend/css/comunicados.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Portal mediotec</title>
 </head>
 
@@ -21,17 +22,17 @@
         </div>
         <hr>
         <div id="options">
-            <div id="home">
-                <img src="/frontend/icons/Home.svg" alt="icon-home">
-                <a href="/frontend/professor/home.html">Home</a>
+            <div id="inicio">
+                <img src="../icons/home.svg" alt="icon-home">
+                <a href="../professor/home.html">Início</a>
             </div>
             <div id="comunicados">
-                <img src="/frontend/icons/Comunicados.svg" alt="icon-comunicados">
+                <img src="../icons/forum.svg" alt="icon-comunicados">
                 <a href="#">Comunicados</a>
             </div>
             <div id="conceitos">
-                <img src="/frontend/icons/Conceitos.svg" alt="icon-conceitos">
-                <a href="/frontend/professor/conceitos.html">Conceitos</a>
+                <img src="../icons/conceitos.svg" alt="icon-conceitos">
+                <a href="../professor/conceitos.html" id="a-conceito">Conceitos</a>
             </div>
         </div>
         <hr>
@@ -48,45 +49,171 @@
         </header>
         <div id="container-main">
             <main>
-                <div>
-                    <div id="titulo-add">
-                        <h1 id="titulo">Comunicados</h1>
-                        <button type="button" id="add-aviso"><img src="/frontend/icons/add_aviso.svg" alt="add-aviso"> Adicionar aviso</button>
-                    </div>
-                    <hr>
+                <div id="header-titulo">
+                    <h1 id="titulo">Comunicados</h1>
+                    <select name="disciplina-select" id="disciplina-select">
+                        <option value="#" disabled selected hidden>Disciplina</option>
+                    </select>
+                    <select name="turma-select" id="turma-select">
+                        <option value="#" disabled selected hidden>Turma</option>
+                    </select>
+                    <button type="button" id="add-aviso"><img src="../icons/add.svg" alt="add-aviso" id="icon-add">
+                        Adicionar aviso</button>
                 </div>
                 <div id="comunicado-list">
                     <div class="comunicado">
-                        <div id="titulo-edit">
-                            <h3>Título</h3>
-                            <div id="edit-delete">
-                                <button type="button" id="btn-edit"><img src="/frontend/icons/editar.svg" alt="btn-edit"></button>
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
                             </div>
+                            <img src="../icons/close.svg" alt="close-icon">
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
                             laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
                             repellendus recusandae architecto voluptate numquam officia.</p>
-                        <div id="btn-lermais">
+                        <div class="btn-lermais">
                             <a href="/frontend/index.html">
-                                <button type="button">Abrir comunicado</button>
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado">
+                        <div class="header-comunicado">
+                            <div class="titulo-edit">
+                                <h3>Titulo</h3>
+                                <img src="../icons/edit_aviso.svg" alt="edit-icon">
+                            </div>
+                            <img src="../icons/close.svg" alt="close-icon">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero minus? Alias quod
+                            laboriosam, sapiente explicabo quasi, aut cupiditate dolor, qui iure similique deleniti
+                            repellendus recusandae architecto voluptate numquam officia.</p>
+                        <div class="btn-lermais">
+                            <a href="/frontend/index.html">
+                                <button type="button">Abrir</button>
                             </a>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
-        <form id="formulario-add">
+        <form id="formulario">
             <h1>Adicionar Aviso</h1>
-            <div id="add-titulo">
-                <h3>Título</h3>
-                <input type="text" name="titulo" id="titulo-area" placeholder="Digite um titulo" maxlength="40">
-            </div>
-            <div id="add-conteudo">
-                <h3>Comunicado</h3>
-                <textarea name="comunicao-textarea" id="comunicao-textarea" placeholder="Digite o conteudo aqui"></textarea>
-            </div>
+            <br>
+            <h3>Título</h3>
+            <br>
+            <input type="text" name="titulo" id="titulo-area" placeholder="Digite um titulo" maxlength="40">
+            <br>
+            <h3>Comunicado</h3>
+            <br>
+            <textarea name="comunicao-textarea" id="comunicao-textarea" placeholder="Digite o conteudo aqui"></textarea>
+            <br>
             <div id="btn-enviar">
-                <button type="submit" id="enviar-btn" onmousedown="ClickChange()" onmouseup="ClickBack()">Enviar</button>
+                <button type="submit" id="enviar-btn" onmousedown="ClickChange()"
+                    onmouseup="ClickBack()">Enviar</button>
             </div>
         </form>
     </div>

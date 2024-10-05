@@ -1,66 +1,21 @@
 const pastaAnterior = document.querySelectorAll('.pasta-anterior');
-const formulario = document.getElementById('formulario-add');
-const btnAdd = document.getElementById('add-aviso');
+const addAviso = document.getElementById('add-aviso')
 const btnEnviar = document.getElementById('enviar-btn');
 const formAviso = document.getElementById('formulario-add');
 const containerMain = document.getElementById('container-main');
+const iconAdd = document.getElementById('icon-add');
+const addTxt = document.getElementById('add-aviso');
+const formulario = document.getElementById('formulario');
 
-// async function CarregarComunicados() {
-//     try {
-//         const response = await fetch('http://localhost:8000/api/avisos/');
-//         if (!response){
-//             throw new Error(`Erro ao buscar dados: ${response.status}`);
-//         }
-//         const avisos = await response.json();
-//         console.log(avisos);
-        
-//         const listaComunicados = document.getElementById('comunicado-list');
-//         const createDivComunicado = document.createElement('div');
-//         const createTitulo = document.createElement('h3');
-//         const divEditDelete = document.createElement('div');
-//         const btnEdit = document.createElement('button');
-//         const btnIcon = document.createElement('img');
-//         const conteudo = document.createElement('p')
-//         const btnLerMais = document.createElement('div');
-//         const irPagLerMais = document.createElement('a');
-//         const btnOpenCom = document.createElement('button');
+addTxt.addEventListener('mouseenter', () => {
+    iconAdd.style.opacity = '100';
+    addTxt.style.color = '#fff';
+})
 
-//         avisos.forEach(aviso => {
-//             // Atribuir Ids
-//             createDivComunicado.id = 'comunicado';
-//             divEditDelete.id = 'edit-delete'
-//             btnEdit.type = 'button';
-//             btnEdit.id = 'btn-edit';
-//             btnIcon.alt= 'btn-edit';
-//             btnIcon.href = '/frontend/icons/editar.svg';
-//             btnLerMais.id = 'btn-lermais';
-//             btnOpenCom.type = 'button';
-
-            
-//             containerMain.appendChild(listaComunicados);
-//             listaComunicados.appendChild(createDivComunicado);
-//             createDivComunicado.appendChild(createTitulo);
-//             createTitulo.innerText = aviso.nome;
-//             createDivComunicado.appendChild(divEditDelete);
-//             divEditDelete.appendChild(btnEdit);
-//             btnEdit.appendChild(btnIcon);
-//             createDivComunicado.appendChild(conteudo)
-//             conteudo.innerText = aviso.descricao;
-//             createDivComunicado.appendChild(btnLerMais);
-//             btnLerMais.appendChild(irPagLerMais);
-//             irPagLerMais.appendChild(btnOpenCom)
-//         })
-//     } catch (error){
-//         console.error('Erro ao buscar dados:', error);
-//     }
-// }
-
-// window.addEventListener('load', function() {
-//     console.log('Página carregada!');
-    
-//     // Chama a função
-//     CarregarComunicados();
-//   });
+addTxt.addEventListener('mouseleave', () => {
+    iconAdd.style.opacity = '';
+    addTxt.style.color = '';
+})
 
 // Enviar Comunicado
 formAviso.addEventListener('submit', async (e) => {
@@ -68,7 +23,7 @@ formAviso.addEventListener('submit', async (e) => {
 
     const titulo = document.getElementById('titulo-area');
     const textArea = document.getElementById('comunicao-textarea');
-    
+
     try {
         const response = await fetch('http://localhost:8000/api/avisos/create', {
             method: 'POST',
@@ -83,9 +38,9 @@ formAviso.addEventListener('submit', async (e) => {
         titulo.value = '';
         textArea.value = '';
         console.log('Usuário cadastrado:', data);
-    } catch(error) {
+    } catch (error) {
         console.error('Erro ao enviar dados:', error);
-    } 
+    }
 })
 
 // Pasta anterior. Ex: Home > Comunicado
@@ -100,9 +55,15 @@ pastaAnterior.forEach((pasta) => {
 });
 
 // Abrir formulário
-btnAdd.addEventListener('click', () => {
-    formulario.style.visibility = 'visible';
+function AbrirForm() {
+    
+    
+}
+
+addAviso.addEventListener('click', () => {
+    formulario.style.visibility = 'hidden'
 })
+
 
 function ClickChange() {
     btnEnviar.style.color = '#fff'
