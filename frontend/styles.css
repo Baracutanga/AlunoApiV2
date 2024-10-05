@@ -42,7 +42,11 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 88.5vw;
+>>>>>>> 21d88a0b2463d6962b19a2e03baf7167159f6858
 }
 
 #pastas {
